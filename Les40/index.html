@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<div class="gallery-container">
+		<div class="galleria">
+			<img src="images/photo1.png">
+			<img src="images/photo2.png">
+			<img src="images/photo3.png">
+			<img src="images/photo4.png">
+			<img src="images/photo5.png">
+			<img src="images/photo6.png">
+			<img src="images/photo7.png">
+			<img src="images/photo8.png">
+			<img src="images/photo9.png">
+			<img src="images/photo10.png">
+			<img src="images/photo11.png">
+			<img src="images/photo12.png">
+			<img src="images/photo13.png">
+			<img src="images/photo14.png">
+			<img src="images/photo15.png">
+			<img src="images/photo16.png">
+			<img src="images/photo17.png">
+			<img src="images/photo18.png">
+			<img src="images/photo19.png">
+			<img src="images/photo20.png">
+		</div>
+		<div class="galleria2">
+			<img src="images/photo21.png">
+			<img src="images/photo22.png">
+			<img src="images/photo23.png">
+			<img src="images/photo24.png">
+			<img src="images/photo25.png">
+			<img src="images/photo26.png">
+			<img src="images/photo27.png">
+			<img src="images/photo28.png">
+			<img src="images/photo29.png">
+			<img src="images/photo30.png">
+			<img src="images/photo31.png">
+			<img src="images/photo32.png">
+			<img src="images/photo33.png">
+			<img src="images/photo34.png">
+			<img src="images/photo35.png">
+		</div>
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+	<script src="galleria/dist/galleria.min.js"></script>
+	<script>
+		(function () {
+			Galleria.loadTheme('galleria/dist/themes/classic/galleria.classic.min.js');
+			Galleria.configure({
+				transition: 'fadeslide',
+				imageCrop: true,
+				height: 700,
+				width: 500,
+				autoplay: 2000,
+				lightbox: true
+				// overlayBackground: '#F00'
+			});
+			Galleria.run('.galleria');
+			Galleria.run('.galleria2');
+		}());
+
+	</script>
+
+</body>
+
+</html>
